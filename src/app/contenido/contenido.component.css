@@ -1,0 +1,42 @@
+.selected {
+  background-color: DodgerBlue;
+  color: white;
+}
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+#leftThing {
+  width: 30%;
+  margin-left: 35px;
+  margin-right: 50px;
+  /*background-color: blue;*/
+}
+#content {
+  width: 30%;
+  
+  /*background-color: green;*/
+}
+#rightThing {
+  width: 40%;
+  /*background-color: yellow;*/
+}
+#boton1 {
+  background-color: DodgerBlue;
+  color: white;
+  margin-right: 8px;
+}
+#boton2 {
+  background-color: DodgerBlue;
+  color: white;
+  margin-left: 8px;
+}
+#opciones{
+  list-style-type: none;
+  margin-right: 50px;
+}
+#botones{
+  margin-bottom: 25px;
+}

@@ -1,0 +1,52 @@
+<div id="container">
+
+  <div id="leftThing">
+  	<h2>Area a buscar</h2>
+  		<p>Sentimientos:</p>
+  		<ul>
+    		<li *ngFor="let sentimiento of sentimientos" [class.selected]="sentimiento.select === true"
+         (click)="onSelect(sentimiento)">
+      		{{ sentimiento.name }}
+      		</li>
+  		</ul>
+  		<p *ngIf="sentimientos.length > 3">There are many feelings!</p>
+  </div>
+
+  <div id="content">
+    <h2>Ingresar datos adicionales</h2>
+    <ul id=opciones>
+        <li *ngFor="let opcion of opciones" [class.selected]="opcion.select === true"
+         (click)="onSelect(opcion)">
+          {{ opcion.name }}
+        </li>
+        <label>
+        File:
+        <input type="text" [(ngModel)]="file" placeholder="file">
+      </label>
+      <button (click)="agregar()">Agregar</button>
+    </ul>
+  </div>
+
+  <div id="rightThing" style="text-align:center">
+    <div (click)="premium()" [class.selected]="suscripcion === true">
+      <h2>Servicio premium</h2>
+        <p> - Tamaño de datos ilimitado.</p>
+        <p> - Recibe tratamiento express para menos de 24 horas.</p>
+    </div>
+    <div (click)="setFree()" [class.selected]="free === true">
+      <h2>Servicio standard</h2>
+        <p> - Maximo 50 GB de procesamiento.</p>
+        <p> - Tiempo de procesamiento de 3 dias.</p>
+    </div>
+  </div>
+
+</div>
+<div id=botones style="text-align:center">
+  <button id="boton1" (click)="send()">Empieza tu consulta</button>
+  <button id="boton2" (click)="getHelp()">¿Tienes dudas?</button>
+</div>
+<div style="text-align:center">
+  <p *ngIf="enviado"> Tu consulta se ha enviado exitosamente.</p>
+  <p *ngIf="ayuda"> Selecciona los archivos a cargar, donde se explorara la informacion, senttimiento y reacciones esperadas; y el modo de suscripción.</p>
+  <button *ngIf="enviado || ayuda" id="boton3" (click)="volver()">Volver</button>
+</div>
