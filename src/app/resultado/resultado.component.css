@@ -1,0 +1,35 @@
+#container{
+ height: 100%;
+ width: 100%;
+ display: flex;
+}
+#leftSide {
+  width: 45%;
+  height: 100%;
+}
+#entities { 
+ height: 100%;
+ width: 100%;
+ display: flex;
+}
+#names{
+width: 45%;
+}
+#emociones{
+width: 45%;
+}
+#categories { 
+ height: 100%;
+ width: 100%;
+ display: flex;
+}
+#category{
+width: 45%;
+}
+#relacionadas{
+width: 45%;
+}
+#rightSide {
+  width: 45%;
+  /*background-color: blue;*/
+}
