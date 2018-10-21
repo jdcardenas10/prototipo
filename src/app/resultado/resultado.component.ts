@@ -17,6 +17,14 @@ export class ResultadoComponent implements OnInit {
     new Sentimiento(false,6, 'Envidia')
   ];
 
+  nombres = [
+    new Sentimiento(false,1, 'Casa'),
+    new Sentimiento(false,2, 'Discurso'),
+    new Sentimiento(false,3, 'Politica'),
+    new Sentimiento(false,5, 'Tristeza'),
+    new Sentimiento(false,6, 'Envidia')
+  ];
+
   constructor() { }
 
   ngOnInit() {
