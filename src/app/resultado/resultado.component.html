@@ -7,7 +7,11 @@
 		</div>
 		<div id="emociones">
 			<h3>Emociones relacionadas</h3>
-		
+			<ul>
+				<li *ngFor="let sentimiento of sentimientos" (click)="onSelect(sentimiento)">
+      				{{ sentimiento.name }}
+      			</li>
+			</ul>
 		</div>
 	</div>
 	<div id="categories">
