@@ -1,3 +1,7 @@
+.selected {
+  background-color: DodgerBlue;
+  color: white;
+}
 #container{
  height: 100%;
  width: 100%;
@@ -6,28 +10,36 @@
 #leftSide {
   width: 45%;
   height: 100%;
+  margin-left: 5%;
 }
 #entities { 
  height: 100%;
  width: 100%;
  display: flex;
+ border: 1px solid;
+ margin-bottom: 5%;
 }
 #names{
 width: 45%;
+margin-left: 1%;
 }
 #emociones{
 width: 45%;
+margin-left: 1%;
 }
 #categories { 
  height: 100%;
  width: 100%;
  display: flex;
+ border: 1px solid;
 }
 #category{
 width: 45%;
+margin-left: 1%;
 }
 #relacionadas{
 width: 45%;
+margin-left: 1%;
 }
 #rightSide {
   width: 45%;

@@ -4,7 +4,7 @@ import { Sentimiento } from '../sentimiento';
 @Component({
   selector: 'app-contenido',
   templateUrl: './contenido.component.html',
-  styleUrls: ['./contenido.component.css']
+  styleUrls: ['./contenido.component.scss']
 })
 export class ContenidoComponent implements OnInit {
 
@@ -70,3 +70,4 @@ export class ContenidoComponent implements OnInit {
   }
 
 }
+

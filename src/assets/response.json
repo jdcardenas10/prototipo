@@ -1,0 +1,166 @@
+{
+  "usage": {
+    "text_units": 1,
+    "text_characters": 764,
+    "features": 3
+  },
+  "language": "en",
+  "entities": [
+    {
+      "type": "Person",
+      "text": "Jamal Khashoggi",
+      "sentiment": {
+        "score": -0.338634,
+        "label": "negative"
+      },
+      "relevance": 0.72051,
+      "emotion": {
+        "sadness": 0.536329,
+        "joy": 0.461793,
+        "fear": 0.052344,
+        "disgust": 0.112558,
+        "anger": 0.088681
+      },
+      "disambiguation": {
+        "subtype": [],
+        "name": "Jamal Khashoggi",
+        "dbpedia_resource": "http://dbpedia.org/resource/Jamal_Khashoggi"
+      },
+      "count": 4
+    },
+    {
+      "type": "Location",
+      "text": "SAUDI ARABIA",
+      "sentiment": {
+        "score": -0.318014,
+        "label": "negative"
+      },
+      "relevance": 0.711895,
+      "emotion": {
+        "sadness": 0.422011,
+        "joy": 0.199725,
+        "fear": 0.070765,
+        "disgust": 0.301973,
+        "anger": 0.156674
+      },
+      "disambiguation": {
+        "subtype": [
+          "GovernmentalJurisdiction",
+          "Kingdom",
+          "MilitaryPost",
+          "CityTown",
+          "Country"
+        ],
+        "name": "Saudi Arabia",
+        "dbpedia_resource": "http://dbpedia.org/resource/Saudi_Arabia"
+      },
+      "count": 1
+    },
+    {
+      "type": "Person",
+      "text": "Crown Prince Mohammed",
+      "sentiment": {
+        "score": -0.614877,
+        "label": "negative"
+      },
+      "relevance": 0.701435,
+      "emotion": {
+        "sadness": 0.253155,
+        "joy": 0.275791,
+        "fear": 0.054376,
+        "disgust": 0.286866,
+        "anger": 0.123551
+      },
+      "disambiguation": {
+        "subtype": [
+          "MusicalArtist"
+        ],
+        "name": "George Nooks",
+        "dbpedia_resource": "http://dbpedia.org/resource/George_Nooks"
+      },
+      "count": 1
+    },
+    {
+      "type": "Person",
+      "text": "King Salman",
+      "sentiment": {
+        "score": -0.614877,
+        "label": "negative"
+      },
+      "relevance": 0.693105,
+      "emotion": {
+        "sadness": 0.210598,
+        "joy": 0.335175,
+        "fear": 0.040938,
+        "disgust": 0.296961,
+        "anger": 0.137047
+      },
+      "count": 2
+    },
+    {
+      "type": "Person",
+      "text": "President Trump",
+      "sentiment": {
+        "score": -0.522104,
+        "label": "negative"
+      },
+      "relevance": 0.450081,
+      "emotion": {
+        "sadness": 0.165157,
+        "joy": 0.0224,
+        "fear": 0.018407,
+        "disgust": 0.564806,
+        "anger": 0.208289
+      },
+      "count": 1
+    }
+  ],
+  "emotion": {
+    "targets": [
+      {
+        "text": "Jamal",
+        "emotion": {
+          "sadness": 0.422011,
+          "joy": 0.199725,
+          "fear": 0.070765,
+          "disgust": 0.301973,
+          "anger": 0.156674
+        }
+      },
+      {
+        "text": "Saudi",
+        "emotion": {
+          "sadness": 0.40965,
+          "joy": 0.142014,
+          "fear": 0.056698,
+          "disgust": 0.417529,
+          "anger": 0.197736
+        }
+      }
+    ],
+    "document": {
+      "emotion": {
+        "sadness": 0.241331,
+        "joy": 0.16453,
+        "fear": 0.06664,
+        "disgust": 0.540654,
+        "anger": 0.112304
+      }
+    }
+  },
+  "categories": [
+    {
+      "score": 0.495155,
+      "label": "/law, govt and politics/government/embassies and consulates"
+    },
+    {
+      "score": 0.261678,
+      "label": "/religion and spirituality/islam"
+    },
+    {
+      "score": 0.156692,
+      "label": "/society/unrest and war"
+    }
+  ],
+  "analyzed_text": "SAUDI ARABIA now has acknowledged that it lied to the world for 17 days about what happened to journalist Jamal Khashoggi when he entered its consulate in Istanbul on Oct. 2. But the new account offered by the regime of King Salman and Crown Prince Mohammed bin Salman is utterly devoid of credibility. The latest version asks us to believe that Mr. Khashoggi died after becoming engaged in a \"brawl\" with officials who had been sent to meet him. His body, Saudi officials told several journalists, was handed over to a \"local collaborator\" for disposal. That President Trump would pronounce this fable credible only underlines his shameful intent to assist in the attempt of the regime - and, in particular, the crown prince - to escape meaningful accountability."
+}

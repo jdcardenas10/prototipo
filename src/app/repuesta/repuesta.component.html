@@ -1,0 +1,56 @@
+<div id="container">
+<div id="leftSide">
+	<h2>Entidades</h2>
+	<div id="entities">
+		<div id="names">
+			<h3>Nombre</h3>
+			<ul *ngIf=response>
+				<li *ngFor="let user of response.entities" [class.selected]="user.text === text" (click)="onSelect(user)">
+      				{{ user.text}}
+      			</li>
+			</ul>
+		</div>
+		<div id="emociones">
+			<h3>Emociones relacionadas</h3>
+			<ul *ngIf=user$>
+				<li >
+      				Sadness: {{ user$.emotion.sadness}}
+      			</li>
+      			<li >
+      				Joy: {{ user$.emotion.joy}}
+      			</li>
+      			<li >
+      				Fear: {{ user$.emotion.fear}}
+      			</li>
+      			<li >
+      				Disgust: {{ user$.emotion.disgust}}
+      			</li>
+      			<li >
+      				Anger: {{ user$.emotion.anger}}
+      			</li>
+			</ul>
+		</div>
+	</div>
+	<div id="categories">
+		<div id="category">
+			<h3>Categorias</h3>
+			<ul *ngIf=response>
+				<li *ngFor="let category of response.categories">
+      				<app-categoria [categoria]=category.label></app-categoria>
+      			</li>
+      		</ul>
+		</div>
+		<div id="relacionadas">
+			<h3>Emociones en general del texto</h3>
+			<ul>
+				<li *ngFor="let sentimiento of sentimientos">
+      				{{ sentimiento.name }}
+      			</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="rightSide" style="text-align:center">
+	<p>Emociones de las entidades, todavia no terminado</p>
+</div>
+</div>
