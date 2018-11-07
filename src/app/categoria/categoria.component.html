@@ -1,3 +1,8 @@
-<div *ngIf="categoria">
-	{{categoria}}
-</div>
+<!--div *ngIf="categoria"-->
+	<ul *ngIf="categoria">
+		<li *ngIf="esta" >
+			{{esta}}
+			<app-categoria [categoria]="salida"></app-categoria>
+		</li>
+	</ul>
+<!--/div-->

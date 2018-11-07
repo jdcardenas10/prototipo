@@ -37,14 +37,27 @@
 			<ul *ngIf=response>
 				<li *ngFor="let category of response.categories">
       				<app-categoria [categoria]=category.label></app-categoria>
+      				{{category.score}}
       			</li>
       		</ul>
 		</div>
 		<div id="relacionadas">
 			<h3>Emociones en general del texto</h3>
-			<ul>
-				<li *ngFor="let sentimiento of sentimientos">
-      				{{ sentimiento.name }}
+			<ul *ngIf=response>
+				<li >
+      				Sadness: {{ response.emotion.document.emotion.sadness}}
+      			</li>
+      			<li >
+      				Joy: {{ response.emotion.document.emotion.joy}}
+      			</li>
+      			<li >
+      				Fear: {{ response.emotion.document.emotion.fear}}
+      			</li>
+      			<li >
+      				Disgust: {{ response.emotion.document.emotion.disgust}}
+      			</li>
+      			<li >
+      				Anger: {{ response.emotion.document.emotion.anger}}
       			</li>
 			</ul>
 		</div>
